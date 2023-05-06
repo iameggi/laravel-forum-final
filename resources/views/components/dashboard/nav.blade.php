@@ -1,31 +1,27 @@
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow">
-    <!-- Primary Navigation Menu -->
+    
     <div class="px-8">
         <div class="relative flex justify-between h-20">
             <div class="flex">
 
-                <!-- Logo -->
+               
                 <div class="flex items-center w-36">
                     <a href="{{ route('threads.index') }}">
                         <x-logos.main class="block w-auto h-12" />
                     </a>
                 </div>
 
-                <!-- Navigation Links -->
+                
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
                         {{ __('Laman') }}
                     </x-jet-nav-link>
                 </div>
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-jet-nav-link>
-                </div> --}}
+             
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <!-- Teams Dropdown -->
+             
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
                 <div class="relative ml-3">
                     <x-jet-dropdown align="right" width="60">
@@ -43,12 +39,12 @@
 
                         <x-slot name="content">
                             <div class="w-60">
-                                <!-- Team Management -->
+                               
                                 <div class="block px-4 py-2 text-xs text-gray-400">
                                     {{ __('Manage Team') }}
                                 </div>
 
-                                <!-- Team Settings -->
+                               
                                 <x-jet-dropdown-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}">
                                     {{ __('Team Settings') }}
                                 </x-jet-dropdown-link>
@@ -61,7 +57,7 @@
 
                                 <div class="border-t border-gray-100"></div>
 
-                                <!-- Team Switcher -->
+                             
                                 <div class="block px-4 py-2 text-xs text-gray-400">
                                     {{ __('Switch Teams') }}
                                 </div>
@@ -75,9 +71,9 @@
                 </div>
                 @endif
 
-                <livewire:notifications.indicator>
+                
 
-                    <!-- Settings Dropdown -->
+                  
                     <div class="relative ml-3">
                         <x-jet-dropdown align="right" width="48">
                             <x-slot name="trigger">
@@ -99,7 +95,7 @@
                             </x-slot>
 
                             <x-slot name="content">
-                                <!-- Account Management -->
+                              
                                 <div class="block px-4 py-2 text-xs text-gray-400">
                                     {{ __('Manage Account') }}
                                 </div>
@@ -116,7 +112,7 @@
 
                                 <div class="border-t border-gray-100"></div>
 
-                                <!-- Authentication -->
+                                
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
 

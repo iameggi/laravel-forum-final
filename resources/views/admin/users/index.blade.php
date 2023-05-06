@@ -27,9 +27,6 @@
                             <div>John Doe</div>
                         </x-table.data>
                         <x-table.data>
-                            <div>Some description of bio....</div>
-                        </x-table.data>
-                        <x-table.data>
                             <div>date</div>
                         </x-table.data>
                         <x-table.data>
