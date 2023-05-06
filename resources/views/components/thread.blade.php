@@ -14,6 +14,7 @@
                 <h2 class="text-xl tracking-wide hover:text-blue-400">
                     {{ $thread->title() }}
                 </h2>
+                <x-jet-section-border />
                 <p class="text-gray-500">
                     {{ $thread->excerpt() }}
                 </p>

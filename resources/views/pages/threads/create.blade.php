@@ -46,15 +46,16 @@
 
                                
                                 <div>
+                                      <x-form.label for="body" value="{{ __('Text pertanyaan') }}" />
                                     <textarea class="ckeditor form-control" name="body"></textarea>
-                                    <x-form.label for="body" value="{{ __('Text pertanyaan') }}" />
+                                  
                                     
                                     <x-form.error for="body" />
                                 </div>
 
                                 {{-- Button --}}
                                 <x-buttons.primary>
-                                    {{ __('Create') }}
+                                    {{ __('Posting') }}
                                 </x-buttons.primary>
                                 <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
                                 <script type="text/javascript">

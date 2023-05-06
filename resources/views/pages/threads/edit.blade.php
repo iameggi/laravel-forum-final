@@ -50,8 +50,9 @@
 
                                 {{-- Body --}}
                                 <div>
+                                    <x-form.label for="body" value="{{ __('Text') }}" />
                                     <textarea class="ckeditor form-control" name="body"></textarea>
-                                    <x-form.label for="body" value="{{ __('Text pertanyaan') }}" />
+                                   
                                     
                                     <x-form.error for="body" />
                                 </div>
